@@ -1,7 +1,7 @@
 :root {
   --background-color: black;
-  --equation-review-color: #dfe6e0;
-  --equation-main-color: #969e98;
+  --equation-review-color: black;
+  --equation-main-color: black;
   --button-bg: black;
   --button-font-color: white;
 }
