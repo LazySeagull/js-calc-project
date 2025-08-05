@@ -1,0 +1,49 @@
+:root{
+    --background-color:black;
+    --equation-review-color:#969e98;
+    --equation-main-color:#dfe6e0;
+}
+
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.MainContainer{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    border:red solid;
+    height:400px;
+    width:400px;
+    /* background-color: var(--background-color); */
+    
+    
+}
+
+.ScreenContainer{
+    display:flex;
+    flex-direction:column;
+    border:red solid;
+    /* margin-bottom:100px; */
+    height:20%;
+    width:100%;
+    text-align:right;
+    gap:20px;
+}
+
+.EquationReview{
+   padding-top:10px;
+   color: var(--equation-review-color);
+}
+
+.EquationMain{
+    color:var(--equation-main-color);
+}
+
+
+
