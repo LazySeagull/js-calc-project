@@ -1,7 +1,7 @@
 :root {
-  --background-color: black;
-  --equation-review-color: black;
-  --equation-main-color: black;
+  --body-background-color: #000000;
+  --equation-review-color: #bab9b3;
+  --equation-main-color: #f2f2eb;
   --button-bg: black;
   --button-font-color: white;
 }
@@ -12,15 +12,51 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
+  background-color: var(--body-background-color);
+}
+
+button{
+  border-radius: 50%;
+  padding:25px;
+  font-weight: 700;
+  color: var(--button-font-color);
+  background-color: var(--button-bg);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border:none;
+  position:relative;
+  transition: 0.3s ease;
+}
+
+button::after{
+  content:""; 
+  height:102%;
+  width:104%;
+  z-index:-1;
+  border-radius:50%;
+  background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+  position:absolute;
+  opacity:0.5;
+}
+
+button:hover{
+  z-index:0;
+  transform: translateY(-4px);
+  box-shadow: 
+    20px 0 100px rgba(0, 140, 255, 0.6),
+    -20px 0 100px rgba(225, 0, 255, 0.6);
 }
 
 .MainContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: red solid;
-  height: 500px;
-  width: 500px;
+  /* border: red solid; */
+
+  height: 550px;
+  width: 550px; 
   /* background-color: var(--background-color); */
 }
 
@@ -28,9 +64,11 @@ body {
 .ScreenContainer {
   display: flex;
   flex-direction: column;
-  border: red solid;
-  /* margin-bottom:100px; */
-  height: 20%;
+  border-radius:25px; 
+  box-shadow:0 0 25px rgba(146,20,255,0.7);
+  margin-bottom:10px;
+
+  height: 14%;
   width: 100%;
   text-align: right;
   gap: 20px;
@@ -39,9 +77,15 @@ body {
 .EquationReview {
   padding-top: 10px;
   color: var(--equation-review-color);
+  border-radius:25px;
+  padding: 5px;
 }
 
 .EquationMain {
+  padding-bottom:10px;
+  border-radius: 25px;
+  padding-right:10px;
+  font-size:25px;
   color: var(--equation-main-color);
 }
 
@@ -53,14 +97,7 @@ and the opeations */
 }
 
 .NumberButton button {
-  border-radius: 50%;
-  padding: 25px;
-  font-size: 13px;
   margin: 10px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-weight: 700;
-  background-color: var(--button-bg);
-  color: var(--button-font-color);
 }
 
 .NumberButton {
@@ -71,6 +108,9 @@ and the opeations */
   width: 70%;
   align-items: center;
   justify-content: center;
+  margin-top:20px;
+  border-radius:25px;
+  box-shadow:0 0 25px rgba(207,14,21,0.7)
 }
 
 .Operations {
@@ -80,14 +120,11 @@ and the opeations */
   justify-content: center;
   gap: 40px;
   width: 30%;
-  border: red solid;
+  margin-top:20px;
+  margin-left:25px;
+  border-radius: 25px;
+  box-shadow:0 0 25px rgba(19,19,207,0.7);
+  
 }
 
-.Operations button {
-  border-radius: 50%;
-  padding: 25px;
-  font-weight: 700;
-  background-color: var(--button-bg);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--button-font-color);
-}
+
