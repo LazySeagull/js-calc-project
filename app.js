@@ -76,9 +76,9 @@ nine.addEventListener("click",()=>{
     equationMain.textContent = nine.textContent;
 })
 
-ten.addEventListener("click",()=>{
-    equationReview.textContent += ten.textContent;
-    equationMain.textContent = ten.textContent;
+zero.addEventListener("click",()=>{
+    equationReview.textContent += zero.textContent;
+    equationMain.textContent = zero.textContent;
 })
 
 
