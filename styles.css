@@ -15,37 +15,36 @@ body {
   background-color: var(--body-background-color);
 }
 
-button{
+button {
   border-radius: 50%;
-  padding:25px;
+  padding: 25px;
   font-weight: 700;
   color: var(--button-font-color);
   background-color: var(--button-bg);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  border:none;
-  position:relative;
+  border: none;
+  position: relative;
   transition: 0.3s ease;
 }
 
-button::after{
-  content:""; 
-  height:102%;
-  width:104%;
-  z-index:-1;
-  border-radius:50%;
+button::after {
+  content: "";
+  height: 102%;
+  width: 104%;
+  z-index: -1;
+  border-radius: 50%;
   background-image: linear-gradient(to bottom right, #008cff, #e100ff);
-  position:absolute;
-  opacity:0.5;
+  position: absolute;
+  opacity: 0.9;
 }
 
-button:hover{
-  z-index:0;
+button:hover {
+  z-index: 0;
   transform: translateY(-4px);
-  box-shadow: 
-    20px 0 100px rgba(0, 140, 255, 0.6),
+  box-shadow: 20px 0 100px rgba(0, 140, 255, 0.6),
     -20px 0 100px rgba(225, 0, 255, 0.6);
 }
 
@@ -56,7 +55,7 @@ button:hover{
   /* border: red solid; */
 
   height: 550px;
-  width: 550px; 
+  width: 550px;
   /* background-color: var(--background-color); */
 }
 
@@ -64,9 +63,9 @@ button:hover{
 .ScreenContainer {
   display: flex;
   flex-direction: column;
-  border-radius:25px; 
-  box-shadow:0 0 25px rgba(146,20,255,0.7);
-  margin-bottom:10px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(146, 20, 255, 0.7);
+  margin-bottom: 10px;
 
   height: 14%;
   width: 100%;
@@ -77,15 +76,15 @@ button:hover{
 .EquationReview {
   padding-top: 10px;
   color: var(--equation-review-color);
-  border-radius:25px;
+  border-radius: 25px;
   padding: 5px;
 }
 
 .EquationMain {
-  padding-bottom:10px;
+  padding-bottom: 10px;
   border-radius: 25px;
-  padding-right:10px;
-  font-size:25px;
+  padding-right: 10px;
+  font-size: 25px;
   color: var(--equation-main-color);
 }
 
@@ -108,9 +107,9 @@ and the opeations */
   width: 70%;
   align-items: center;
   justify-content: center;
-  margin-top:20px;
-  border-radius:25px;
-  box-shadow:0 0 25px rgba(207,14,21,0.7)
+  margin-top: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 25px rgba(207, 14, 21, 0.7);
 }
 
 .Operations {
@@ -120,11 +119,8 @@ and the opeations */
   justify-content: center;
   gap: 40px;
   width: 30%;
-  margin-top:20px;
-  margin-left:25px;
+  margin-top: 20px;
+  margin-left: 25px;
   border-radius: 25px;
-  box-shadow:0 0 25px rgba(19,19,207,0.7);
-  
+  box-shadow: 0 0 25px rgba(19, 19, 207, 0.7);
 }
-
-
